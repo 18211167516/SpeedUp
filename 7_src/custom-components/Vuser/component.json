@@ -1,0 +1,25 @@
+{
+  "component": "v-user",
+  "label": "用户名",
+  "propValue": "未登录",
+  "icon": "wenben",
+  "children":[],
+  "events":{},
+  "type":1,
+  "isShowLeft":true,
+  "isNeedLogin":true,
+  "style": {
+      "left":0,
+      "top":100,
+      "width": 100,
+      "height": 22,
+      "fontSize": 14,
+      "fontWeight": 500,
+      "lineHeight": "",
+      "letterSpacing": 0,
+      "textAlign": "",
+      "zIndex":0,
+      "color": ""
+  },
+  "attach_config":[]
+}

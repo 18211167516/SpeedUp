@@ -1,0 +1,32 @@
+{
+    "component": "v-text",
+    "label": "文字",
+    "propValue": "双击编辑文字",
+    "icon": "wenben",
+    "children":[],
+    "events":{},
+    "type":1,
+    "isShowLeft":true,
+    "isNeedLogin":false,
+    "style": {
+        "left":0,
+        "top":0,
+        "width": 100,
+        "height": 22,
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": "",
+        "letterSpacing": 0,
+        "textAlign": "",
+        "zIndex":0,
+        "color": ""
+    },
+    "attach_config":[
+        {
+          "key":"propValue",
+          "component":"el-input",
+          "label":"内容",
+          "type":"textarea"
+        }
+    ]
+}

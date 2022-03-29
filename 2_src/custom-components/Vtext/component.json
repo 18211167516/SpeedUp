@@ -1,0 +1,17 @@
+{
+    "component": "v-text",
+    "label": "文字",
+    "propValue": "双击编辑文字",
+    "icon": "wenben",
+    "children":[],
+    "style": {
+        "width": 200,
+        "height": 22,
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": "",
+        "letterSpacing": 0,
+        "textAlign": "",
+        "color": ""
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "component": "v-truntable",
+    "label": "大转盘",
+    "propValue": "",
+    "icon": "wenben",
+    "children":[],
+    "events":{},
+    "type":2,
+    "isShowLeft":true,
+    "isNeedLogin":true,
+    "style": {
+        "left":0,
+        "top":0,
+        "width": 320,
+        "height": 320
+    },
+    "attach_config":[]
+}
