@@ -6,6 +6,12 @@
 7天教会你h5可视化拖拽生成营销h5，探索低代码生成h5营销之路
 ```
 
+## 项目效果视频
+
+<video id="video" controls="" preload="none" >
+<source id="mp4" src="https://img.soogif.com/video/2ea0a32107264b96b8fd778257b95eb4.mp4" type="video/mp4">
+</video>
+
 ## Project setup
 ```
 yarn install

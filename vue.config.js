@@ -4,7 +4,7 @@ function resolve (dir) {
   return path.join(__dirname, dir)
 } 
 
-const src =  "7_src"
+const src =  "src"
 module.exports={
     configureWebpack:config=>{
       config.entry = './'+src+'/main.js'
