@@ -1,4 +1,10 @@
-# magic
+# SpeedUp
+
+## 项目介绍
+
+```
+7天教会你h5可视化拖拽生成营销h5，探索低代码生成h5营销之路
+```
 
 ## Project setup
 ```
@@ -84,10 +90,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### 7 days
 
 * 新增分享按钮组件
-* 优化代码
+* 优化代码,比如移动端兼容方案（rem处理）
 * 完善功能
 * 录制视频
 * npm install postcss-plugin-px2rem --save-dev
 
+
+### 8、咨询作者
+
+![advet](https://camo.githubusercontent.com/4dd4816fde9a08c5d9fcd91698f0c2543c570a06087b6ca18661f7234d5a796f/68747470733a2f2f61637469766974792d7572742e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f6563697469632f2545362538382539312545372539412538342e6a7067)
 
 
