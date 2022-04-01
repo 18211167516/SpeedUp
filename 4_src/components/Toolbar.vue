@@ -2,7 +2,7 @@
     <div class="toolbar">
         <el-button @click="undo">撤消</el-button>
         <el-button @click="redo">恢复</el-button>
-        <el-button><router-link target="_blank" to ='/preview'>跳转页面去预览</router-link></el-button>
+        <el-button @click="open">跳转页面去预览</el-button>
         <el-button @click="preview">
             <span v-if="editMode == 'preview'">编辑</span>
             <span v-else>预览</span>
@@ -32,6 +32,12 @@
                 }else{
                     this.setEditMode('edit')
                 }
+            },
+            open(){
+                console.log(111);
+                this.save()
+                let {href} = this.$router.resolve({name: 'preview'});
+                window.open(href);
             },
             //保存
             save(){

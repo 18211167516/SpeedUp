@@ -33,33 +33,39 @@
   export default {
     name: 'App',
     components: {
-      ComponentList,Toolbar,Editor,RightConfig
+        ComponentList,Toolbar,Editor,RightConfig
     },
     computed:{
-        ...mapState(component,["isShowPreview","editor"])
+        ...mapState(component,["isShowPreview"])
     },
     methods: {
-        ...mapActions(component,["addComponent"]),
-        // 当被拖动元素在释放区里放下时触发
+         ...mapActions(component,["addComponent","getEditor"]),
+         //拖拽到编辑区s释放
          handleDrop(e) {
-            console.log("拖拽到编辑区了");
             e.preventDefault()
             e.stopPropagation()
-            const index = e.dataTransfer.getData('index')
-            const rectInfo = this.editor.getBoundingClientRect()
-            if (index) {
-                const component = deepCopy(this.$componentList[index])
-                component.style.top = e.clientY - rectInfo.y
-                component.style.left = e.clientX - rectInfo.x
-                component.id = generateID()
-                this.addComponent({component })
+            if (this.isShowPreview){
+                alert("处于预览模式不能拖拽") 
+            }else{
+                const index = e.dataTransfer.getData('index')
+                console.log(e);
+                if (index) {
+                    const component = deepCopy(this.$componentList[index])
+                    component.style.top = e.offsetY
+                    component.style.left = e.offsetX
+                    component.id = generateID()
+                    //添加组件
+                    this.addComponent({component})
+                }
             }
+
         },
-        //当被拖动元素在释放区内移动时触发
+        //
         handleDragOver(e) {
             e.preventDefault()
             e.dataTransfer.dropEffect = 'copy'
         },
+
     },
   }
 </script>
@@ -97,17 +103,36 @@
         }
 
         .center {
+            position: absolute!important;
+            overflow: auto;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 300px;
+            right: 310px;
+             background: #f5f5f5;
+            /* position:absolute;
             margin-left: 200px;
             margin-right: 262px;
             background: #f5f5f5;
             height: 100%;
             overflow: auto;
-            padding: 20px;
+            padding: 20px; */
 
             .content {
-                width: 100%;
-                height: 100%;
-                overflow: auto;
+                border: 1px solid red;
+                /* width: 300px;
+                height: 600px;
+                background-color: #fff;
+                border: 1px solid red;
+                margin: auto; */
+                position: absolute;
+                min-width: 375px;
+                height: 600px;
+                top: 20px;
+                left: 50%;
+                margin-left: -157px;
+                background: #fff;
             }
         }
     }

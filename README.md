@@ -8,6 +8,32 @@
 ## 项目效果视频
 
 [链接](https://img.soogif.com/video/2ea0a32107264b96b8fd778257b95eb4.mp4)
+
+## 架构图
+
+![img](./a.png)
+
+## 目录结构
+
+```
+    ├─src  	            （项目核心目录）
+    |  ├─assets         （资源目录）
+    |  ├─components     （系统组件比如编辑区呀，物料组件区、配置区）
+    |  ├─custom-components         （物料组件目录）
+    |  ├─router         （路由）
+    |  ├─store          （数据存储）
+    |  ├─utils          （工具包）
+    |  ├─views          （路由视图层）
+    |  ├─App.vue        （app组件）
+    |  ├─main.js        （入口文件）
+    ├─public            （包含模板文件）
+    ├─.gitigonre        （git的忽略配置文件）
+    ├─babel.config.js  	（babel的配置文件，babel是js编译器）
+    ├─package.json  	（npm包管理的配置文件）
+    ├─vue.config.js     （vue的配置文件）
+
+```
+
 ## Project setup
 ```
 yarn install
@@ -15,7 +41,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn dev
 ```
 
 ### Compiles and minifies for production
@@ -30,8 +56,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
 
 ### 1 days 初始化项目
 
@@ -63,7 +87,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 3 days
 
-* 完善编辑区
+* 完善编辑区,支持组件在编辑区拖动
 * 点击当前组件展示右侧属性配置
 * 实现预览功能
 

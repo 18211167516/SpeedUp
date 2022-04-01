@@ -4,7 +4,7 @@ function resolve (dir) {
   return path.join(__dirname, dir)
 } 
 
-const src =  "7_src"
+const src =  "5_src"
 module.exports={
     configureWebpack:config=>{
       config.entry = './'+src+'/main.js'
@@ -13,6 +13,6 @@ module.exports={
         // 别名配置
         config.resolve.alias
           .set('@', resolve(src))
-          .set('components', resolve('{src}/components'))
+          .set('components', resolve(src+'/components'))
     },
 } 

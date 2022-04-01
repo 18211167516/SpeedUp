@@ -16,6 +16,9 @@
 <script>
 export default {
     name:"ComponentList",
+    mounted() {
+        console.log(this.$componentList)
+    },
     methods: {
         handleDragStart(e) {
             console.log("开始移动")
