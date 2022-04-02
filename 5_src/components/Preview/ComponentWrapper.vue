@@ -28,6 +28,7 @@ export default {
         getStyle,
         handleClick() {
             const events = this.config.events 
+            console.log(this.config);
             Object.keys(events).forEach(event => {
                 console.log(events[event].key_id);
                 this[event](events[event].key_id,events[event].param)

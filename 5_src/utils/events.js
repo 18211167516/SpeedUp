@@ -5,7 +5,7 @@ const events = {
     redirect(key_id,{url,name,timeout}) {
         if (url) {
             console.log(url,name,timeout)
-            //window.location.href = url
+            window.location.href = url
         }
     },
 
@@ -13,10 +13,12 @@ const events = {
         if (msg) {
             if (timeout!="") {
                 setTimeout(() => {
+                    window.alert("延迟"+msg)
                     console.log("延迟",msg)
                 }, timeout);
             }
             else{
+                window.alert("无延迟",msg)
                 console.log("无延迟",msg)
             }
             $(key_id).innerText=msg
@@ -35,21 +37,6 @@ const eventList = [
         label: '跳转事件',
         event: events.redirect,
         params: {
-            name:{
-                label:"名称",
-                component:"el-select",
-                value:"",
-                option:[
-                    {
-                        "label": "左对齐",
-                        "value": "left"
-                    },
-                    {
-                        "label": "居中",
-                        "value": "center"
-                    },
-                ]
-            },
             url:{
                 label:"链接",
                 component:"el-input",

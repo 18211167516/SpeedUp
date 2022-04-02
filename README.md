@@ -105,8 +105,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 6 days
 
-
-* 背景图上传替换
+* 切换路由模式
+* 组件之前通信采用消息总线
+* 新增背景图上传替换
 * 新增用户信息组件
 * 添加登录方法
 * npm i babel-plugin-import -D

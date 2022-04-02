@@ -24,26 +24,6 @@ Vue.config.productionTip = false
 
 import {router,pinia} from './router'
 
-Vue.directive('login', {
-  bind: function (el, binding, vnode) {
-    console.log("指令初始化",el,binding,vnode);
-  },
-  // 当被绑定的元素插入到 DOM 中时……
-  inserted: function (el) {
-
-    console.log("插入dom",el);
-  },
-  updated(el,binding) {
-    console.log("更新dom",el,binding);
-  },
-  componentUpdated(el,binding) {
-    console.log("组件更新dom",el,binding);
-  },
-  unbind(el,binding){
-    console.log("解绑的时候",el,binding);
-  }
-})
-
 new Vue({
   router,
   render: h => h(App),

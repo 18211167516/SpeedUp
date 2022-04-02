@@ -15,7 +15,7 @@
 
         <!-- 选择事件 -->
         <Modal v-model="isShowEvent">
-            <el-tabs v-model="eventActiveName">
+            <el-tabs v-model="eventActiveName" tabPosition="left">
                 <el-tab-pane
                     v-for="item in eventList"
                     :key="item.key"
